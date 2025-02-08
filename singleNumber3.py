@@ -11,8 +11,8 @@ class Solution:
             bm1 = bm1 ^ i
 
         # least significant bit
-        lsb = bm1 & -bm1            # bm1 & 2's Complement bm1
-        lsb = bm1 & (~bm1)+1            # bm1 & 2's Complement bm1
+        lsb = bm1 & -bm1                # bm1 & 2's Complement bm1
+        # lsb = bm1 & (~bm1)+1        
 
         bm2 = 0                         # bitmask2
         for i in nums:
